@@ -1,0 +1,199 @@
+
+
+* {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'jedi';
+  src: url('./fonts/star-jedi_allfont.net-webfont.woff2') format('woff2'),
+       url('./fonts/star-jedi_allfont.net-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/jumbo-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.jumbotron {
+  background-color:transparent !important;
+}
+
+h1 {
+  font-family: jedi;
+  font-size: 4em;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #FFE81F 0%, #9b9942 100%);
+  background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.8em;
+  color: #0E89E6;
+}
+
+h2 {
+  color: rgb(194, 189, 189);
+  text-align: left;
+}
+
+h3 {
+  color: #0E89E6;
+}
+
+h4 {
+  color: #0E89E6;
+  font-size: 2em;
+  margin-top: 8rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: 28% 20% 20% 20% 20%;
+  grid-template-areas: 
+  ". box1 box2 box3 ."
+  ". box4 box5 box6 .";
+}
+
+.person-names:nth-of-type(1) {
+  grid-area: box1;
+}
+
+.person-names:nth-of-type(2) {
+  grid-area: box2;
+}
+
+.person-names:nth-of-type(3) {
+  grid-area: box3;
+}
+
+.person-names:nth-of-type(4) {
+  grid-area: box4;
+}
+
+.person-names:nth-of-type(5) {
+  grid-area: box5;
+}
+
+.person-names:nth-of-type(6) {
+  grid-area: box6;
+}
+
+
+
+/* LIGHTSABER ANIMATION -----------------------------------------------------------------------*/
+.light {
+  width: 960px;
+  margin-left: 39rem;
+ position: absolute;
+ top: 140px;
+  
+}
+.lightsaber {
+ position: relative;
+ position: absolute;
+ transform: rotate(90deg);
+
+}
+
+.lightsaber label {
+cursor: pointer;
+position: absolute;
+bottom: 0;
+left: 0;
+z-index: 88;
+text-indent: -9999px;
+width: 15px;
+height: 60px;
+border-bottom: solid 4px rgb(158, 158, 158);
+border-top: solid 5px rgb(170, 170, 170);
+border-radius: 5px;
+
+background: linear-gradient(to right, rgb(63, 62, 62) 0%,rgb(70, 69, 69) 50%,rgb(59, 59, 59) 51%,rgb(46, 45, 45) 100%); 
+
+}
+
+.lightsaber .switch {
+background: #B94A37;
+width: 5px;
+height: 10px;
+display: block;
+position: absolute;
+bottom: 25px;
+left: 13px;
+transition: left 200ms;
+border-radius: 10px;
+}
+
+.lightsaber input[type=checkbox] {
+position: absolute;
+bottom: 0;
+left: 0;
+opacity: 0;
+z-index: 77;
+}
+
+.lightsaber .plasma {
+transition: height 300ms,;
+border-radius: 12px 12px 0 0;
+position: absolute;
+bottom: 55px;
+left: 2px;
+width: 10px;
+display: block;
+filter: blur(1px);
+height: 0;
+}
+
+
+.lightsaber input[type=checkbox]:checked ~ div.plasma {
+height: 374px;
+}
+
+.lightsaber input[type=checkbox]:hover ~ div.switch {
+background: #c09853;
+left: 12px;
+}
+
+.lightsaber input[type=checkbox]:checked ~ div.switch {
+background: #468847;
+}
+
+.vader {
+	background: rgb(229,17,21); /* Old browsers */
+	background: linear-gradient(to right, rgba(229,17,21,1) 0%,rgba(254,254,254,1) 30%,rgba(254,254,254,1) 47%,rgba(254,254,254,1) 71%,rgba(229,17,21,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e51115', endColorstr='#e51115',GradientType=1 ); /* IE6-9 */
+	animation-name: vader;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+
+
+div { 
+	transform : translateZ(0); 
+}
+
+
+
+@keyframes vader {
+	from { box-shadow: 0 0 10px #e51115; }
+	50% { box-shadow: 0 0 16px #e51115; }
+	to { box-shadow: 0 0 10px #e51115; }
+}
+
+
+
