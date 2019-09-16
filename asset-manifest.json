@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/starwars/static/css/main.6c153756.chunk.css",
+    "main.js": "/starwars/static/js/main.97953c0d.chunk.js",
+    "main.js.map": "/starwars/static/js/main.97953c0d.chunk.js.map",
+    "runtime~main.js": "/starwars/static/js/runtime~main.e8e04b7d.js",
+    "runtime~main.js.map": "/starwars/static/js/runtime~main.e8e04b7d.js.map",
+    "static/js/2.4b49a275.chunk.js": "/starwars/static/js/2.4b49a275.chunk.js",
+    "static/js/2.4b49a275.chunk.js.map": "/starwars/static/js/2.4b49a275.chunk.js.map",
+    "index.html": "/starwars/index.html",
+    "precache-manifest.8c1a00845e7ce9f1f7d31a813a95f30e.js": "/starwars/precache-manifest.8c1a00845e7ce9f1f7d31a813a95f30e.js",
+    "service-worker.js": "/starwars/service-worker.js",
+    "static/css/main.6c153756.chunk.css.map": "/starwars/static/css/main.6c153756.chunk.css.map",
+    "static/media/index.css": "/starwars/static/media/star-jedi_allfont.net-webfont.93850050.woff"
+  }
+}
